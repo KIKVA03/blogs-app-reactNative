@@ -3,16 +3,18 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { Provaider } from "./src/context/BlogContext";
 
-import BotScreen from "./src/screens/botScreen";
+import ShowScreen from "./src/screens/ShowScree";
 import indexScreen from "./src/screens/indexScreen";
+import CreateScreen from "./src/screens/CreateScreen";
 
 const navigator = createStackNavigator(
     {
         index: indexScreen,
-        bot: BotScreen,
+        Show: ShowScreen,
+        Create: CreateScreen,
     },
     {
-        initialRoutName: "bot",
+        initialRoutName: "Show",
         defaultNavigationOptions: {
             title: " Blogs",
         },
