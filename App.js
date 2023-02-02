@@ -6,12 +6,14 @@ import { Provaider } from "./src/context/BlogContext";
 import ShowScreen from "./src/screens/ShowScree";
 import indexScreen from "./src/screens/indexScreen";
 import CreateScreen from "./src/screens/CreateScreen";
+import EditScreen from "./src/screens/EditScreen";
 
 const navigator = createStackNavigator(
     {
         index: indexScreen,
         Show: ShowScreen,
         Create: CreateScreen,
+        Edit: EditScreen,
     },
     {
         initialRoutName: "Show",
